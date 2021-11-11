@@ -1,0 +1,25 @@
+{
+  "name": "IR-Player",
+  "version": "1.0.0",
+  "description": "a simple video player build with electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-linux": "electron-builder -l",
+    "build-windows": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Iliya Rezaee",
+    "email": "iliyarezaee2017@gmail.com"
+  },
+  "homepage": "https://github.com/IliyaRezaee/ir-videoplayer",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "subsrt": "^1.1.1"
+  },
+  "devDependencies": {
+    "electron": "^15.3.1",
+    "electron-builder": "^22.13.1"
+  }
+}

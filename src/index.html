@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>VideoPlayer</title>
+        <!-- boostrap -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+        <script defer src="static/js/bootstrap.bundle.min.js"></script>
+        <!-- Plyr.io -->
+        <script src="static/js/plyr.js"></script>
+        <link rel="stylesheet" href="static/css/plyr.css" />
+        <!-- main css/js files -->
+        <script defer src="static/js/main.js" type="module"></script>
+        <link rel="stylesheet" href="static/css/main.css" />
+    </head>
+    <body>
+        <div class="container mt-3">
+            <a
+                class="text-decoration-none text-info"
+                data-bs-toggle="collapse"
+                href="#input"
+                role="button"
+                aria-expanded="false"
+                aria-controls="input"
+            >
+                <h3>Input</h3>
+            </a>
+            <header id="input">
+                <form>
+                    <div class="row">
+                        <section class="col-md-6">
+                            <div class="input-group">
+                                <div class="form-floating mt-3 w-75">
+                                    <input
+                                        type="url"
+                                        class="form-control"
+                                        id="video-url"
+                                        placeholder="https://example.com/"
+                                        required
+                                    />
+                                    <label for="video-url"
+                                        >Enter the video url or pick file</label
+                                    >
+                                </div>
+                                <input
+                                    type="button"
+                                    class="btn btn-primary mt-3 w-25"
+                                    value="Pick File"
+                                    id="video-file-picker"
+                                />
+                            </div>
+                        </section>
+                        <section class="col-md-6">
+                            <div class="input-group">
+                                <div class="form-floating mt-3 w-75">
+                                    <input
+                                        type="url"
+                                        class="form-control"
+                                        id="subtitle-url"
+                                        placeholder="https://example.com/"
+                                    />
+                                    <label for="subtitle-url"
+                                        >Enter the subtitle url or pick
+                                        file</label
+                                    >
+                                </div>
+                                <input
+                                    type="button"
+                                    class="btn btn-primary mt-3 w-25"
+                                    value="Pick File"
+                                    id="subtitle-file-picker"
+                                />
+                            </div>
+                        </section>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 mt-3">
+                        Play
+                    </button>
+                </form>
+            </header>
+        </div>
+        <div class="container mt-5">
+            <a
+                class="text-decoration-none text-info"
+                data-bs-toggle="collapse"
+                href="#video-parent"
+                role="button"
+                aria-expanded="false"
+                aria-controls="video-parent"
+            >
+                <h3>Output</h3>
+            </a>
+            <div class="mt-3" id="video-parent"></div>
+        </div>
+    </body>
+</html>

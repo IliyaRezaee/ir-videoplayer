@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Vazir;
+    src: url("vazir-font/Vazir-Black.eot");
+    src: url("vazir-font/Vazir-Black.eot?#iefix") format("embedded-opentype"),
+        url("vazir-font/Vazir-Black.woff2") format("woff2"),
+        url("vazir-font/Vazir-Black.woff") format("woff"),
+        url("vazir-font/Vazir-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+.plyr__caption {
+    font-family: "Vazir";
+}
